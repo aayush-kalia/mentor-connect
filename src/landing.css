@@ -201,8 +201,9 @@ header {
 }
 
 .profile-icon-picture {
-  width: 30px;
-  height: auto;
+  display: block;
+  margin: auto;
+  
 }
 /* Footer Styles */
 footer {

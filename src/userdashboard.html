@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <title>User Dashboard</title>
     <link rel="stylesheet" href="userdashboard.css">
 </head>
@@ -36,6 +39,9 @@
                 <option value="query1">How to improve my coding skills?</option>
                 <option value="query2">Best resources for learning React?</option>
                 <option value="query3">Can I transition to Data Science?</option>
+                <option value="query4">How to prepare for coding interviews?</option>
+                <option value="query5">What are the best practices in web development?</option>
+                <option value="query6">How can I contribute to open source?</option>
             </select>
         </div>
         <div class="query-right">
@@ -54,12 +60,20 @@
     <!-- Enrolled Courses Section -->
     <div class="courses-section">
         <h2>Enrolled Courses</h2>
-        <ul>
+        <ul id="courses-list">
             <li>Full Stack Web Development</li>
             <li>Introduction to Python</li>
             <li>Data Structures and Algorithms</li>
         </ul>
+        <button id="add-course-btn">Add New Course</button>
     </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy;The Algorithmists-2024</p>
+        
+        
+    </footer>
 
     <script src="userdashboard.js"></script>
 </body>

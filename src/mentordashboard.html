@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard</title>
+    <link rel="stylesheet" href="mentordashboard.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="profile-icon.png" alt="Profile Icon" class="profile-icon">
+        </div>
+        <div class="navbar-center">
+            <h1>Mentor Connect</h1>
+        </div>
+        <div class="navbar-right">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Search Bar for Mentees -->
+    <div class="search-section">
+        <input type="text" id="search-mentee" placeholder="Search Mentee by Name">
+    </div>
+
+    <!-- Queries Section -->
+    <div class="query-section">
+        <div class="query-left">
+            <label for="mentee-queries">Mentees' Queries:</label>
+            <select id="mentee-queries">
+                <option value="query1">What is the best way to learn JavaScript?</option>
+                <option value="query2">Can you help with a career transition to data science?</option>
+                <option value="query3">What courses should I take to improve problem-solving skills?</option>
+            </select>
+        </div>
+        <div class="query-right">
+            <button class="answer-query-btn">Answer Query</button>
+        </div>
+    </div>
+    <!-- Schedule Meeting Card -->
+<div class="schedule-card">
+  <h2>Schedule a Meeting</h2>
+  <form id="schedule-form">
+      <label for="meeting-date">Select Date:</label>
+      <input type="date" id="meeting-date" required>
+      
+      <label for="meeting-time">Select Time:</label>
+      <input type="time" id="meeting-time" required>
+      
+      <button type="submit" class="schedule-button">Schedule Meeting</button>
+  </form>
+</div>
+
+
+    <script src="mentordashboard.js"></script>
+</body>
+</html>
