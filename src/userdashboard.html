@@ -39,9 +39,8 @@
                 <option value="query1">How to improve my coding skills?</option>
                 <option value="query2">Best resources for learning React?</option>
                 <option value="query3">Can I transition to Data Science?</option>
-                <option value="query4">How to prepare for coding interviews?</option>
-                <option value="query5">What are the best practices in web development?</option>
-                <option value="query6">How can I contribute to open source?</option>
+                <option value="query4">How to prepare for interviews?</option>
+                <option value="query5">What projects should I work on?</option>
             </select>
         </div>
         <div class="query-right">
@@ -53,7 +52,7 @@
     <div class="progress-section">
         <h2>Your Progress</h2>
         <div class="progress-bar">
-            <div class="progress" style="width: 60%;">60%</div>
+            <div class="progress" style="width: 60%; background-color: #4CAF50;">60%</div>
         </div>
     </div>
 
@@ -68,12 +67,26 @@
         <button id="add-course-btn">Add New Course</button>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy;The Algorithmists-2024</p>
-        
-        
-    </footer>
+    <!-- Chat Button -->
+    <button id="chat-button" class="chat-button">💬</button>
+
+    <!-- Chat Sidebar -->
+    <div id="chat-sidebar" class="chat-sidebar">
+        <div class="chat-header">
+            <h3 id="chat-title">Chat</h3>
+            <button id="close-chat" class="close-chat">✖</button>
+        </div>
+        <div class="chat-options">
+            <button class="chat-option" data-type="india">India</button>
+            <button class="chat-option" data-type="mentor">Mentor</button>
+            <button class="chat-option" data-type="peers">Peers</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <p>Welcome to the chat!</p>
+        </div>
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button id="send-message">Send</button>
+    </div>
 
     <script src="userdashboard.js"></script>
 </body>
