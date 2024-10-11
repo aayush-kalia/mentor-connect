@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+}
+
+.navbar-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-center h1 {
+  color: white;
+  text-align: center;
+}
+
+.navbar-right .login-btn, .signup-btn {
+  padding: 8px 16px;
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-right .login-btn:hover, .signup-btn:hover {
+  background-color: #45a049;
+}
+
+/* Search Section */
+.search-section {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-section input {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Query Section */
+.query-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.query-left {
+  width: 48%;
+}
+
+.query-left label {
+  font-size: 18px;
+}
+
+.query-left select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.query-right {
+  width: 48%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.new-query-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-query-btn:hover {
+  background-color: #45a049;
+}
+
+/* Progress Section */
+.progress-section {
+  margin: 20px;
+}
+
+.progress-section h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+}
+
+.progress {
+  background-color: #4CAF50;
+  height: 100%;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Courses Section */
+.courses-section {
+  margin: 20px;
+}
+
+.courses-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.courses-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.courses-section ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
