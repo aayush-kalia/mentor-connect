@@ -2,15 +2,16 @@
   background: #ffc107;
 }
 /* end common class */
+
 .top-status ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
+
 .top-status ul li {
   width: 120px;
   height: 120px;
@@ -24,6 +25,7 @@
   box-shadow: 1px 1px 10px 1px #ddd inset;
   margin: 10px 5px;
 }
+
 .top-status ul li.active {
   border-color: #06C167;
   box-shadow: 1px 1px 20px 1px #ffc107 inset;
@@ -34,6 +36,7 @@ ul.timeline {
   list-style-type: none;
   position: relative;
 }
+
 ul.timeline:before {
   content: ' ';
   background: #d4d9df;
@@ -44,10 +47,12 @@ ul.timeline:before {
   height: 100%;
   z-index: 400;
 }
+
 ul.timeline > li {
   margin: 20px 0;
   padding-left: 30px;
 }
+
 ul.timeline > li:before {
   content: '\2713';
   background: #fff;
@@ -65,6 +70,7 @@ ul.timeline > li:before {
   font-size: 24px;
   border: 2px solid var(--ogenix-primary);
 }
+
 ul.timeline > li.active:before {
   content: '\2713';
   background: #28a745;
@@ -82,4 +88,18 @@ ul.timeline > li.active:before {
   font-size: 30px;
   border: 2px solid var(--ogenix-primary);
 }
-/* end timeline */
+
+/* New styles for the updated sections */
+#mentorDetails {
+  display: none; /* Initially hidden */
+}
+
+#coursesSelected {
+  display: none; /* Initially hidden */
+}
+
+#activityLog {
+  display: none; /* Initially hidden */
+}
+
+/* Additional styles for layout and visuals can be added here */
