@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Connect</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="profile-icon">
+                <img class="profile-icon-picture" src="./user.png">
+            </div>
+        </div>
+        <div class="header-center">
+            Mentor Connect
+        </div>
+        <div class="header-right auth-buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showSignup()">Signup</button>
+        </div>
+    </header>
+    
+    <!-- Tagline and Info (Moved outside header) -->
+    <div class="header-info">
+        <p class="tagline">Empowering students, enriching mentors</p>
+        <p class="info">A platform where students can connect with experienced mentors and gain valuable insights in their chosen domains.</p>
+    </div>
+    
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="stat-box">
+            <h2 id="student-count">1500</h2>
+            <p>Students Enrolled</p>
+        </div>
+        <div class="stat-box">
+            <h2 id="mentor-count">200</h2>
+            <p>Mentors Present</p>
+        </div>
+        <div class="stat-box">
+            <h2 id="domain-count">50</h2>
+            <p>Domains Available</p>
+            <div class="domains-list" id="domains-list">
+                <ul id="domains-ul">
+                    <!-- Domains will be populated here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-box">
+            <input type="text" id="search-name" placeholder="Search Mentor by Name">
+            <button onclick="searchByName()">Search</button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search-domain" placeholder="Search Mentor by Domain">
+            <button onclick="searchByDomain()">Search</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <p>© The Algorithmists - 2024</p>
+</footer>
+
+
+    <!-- Link to External JS -->
+    <script src="landing.js"></script>
+</body>
+</html>
